@@ -1,0 +1,4 @@
+<input [(ngModel)]="searchText" placeholder="Search...">
+<ul>
+  <li *ngFor="let item of items | filterArray:searchText">{{ item }}</li>
+</ul>
